@@ -1,0 +1,78 @@
+/* General App Styling */
+.app {
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f4ff, #e0f7fa);
+  min-height: 100vh;
+}
+
+/* Product & Cart Sections */
+.products, .cart {
+  margin: 20px auto;
+  width: 70%;
+  text-align: left;
+}
+
+/* Product & Cart Item Cards */
+.product, .cart-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover, .cart-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+/* Buttons */
+button {
+  margin: 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+  transform: translateY(-2px);
+}
+
+/* Coupon Input */
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #42a5f5;
+  outline: none;
+}
+
+/* Summary Section */
+h2, h3 {
+  color: #1565c0;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
